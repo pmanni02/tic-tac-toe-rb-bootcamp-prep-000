@@ -58,19 +58,11 @@ end
 
 # Define your play method below
 def play(board)
-  loop do
+  over = false 
+  while over === false
     turn(board)
-    if over?(board) === true
-
-      if won?(board) != false
-        puts "Congratulations!"
-      else
-        puts "Cat's Game!"
-      end
-
-      break
-    end
   end
+
 end
 
 def over?(board)
