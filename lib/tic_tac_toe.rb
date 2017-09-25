@@ -56,6 +56,13 @@ end
 
 # Define your play method below
 def play(board)
+  loop do
+    if over?(board)
+      break
+    else
+      turn(board)
+    end
+  end
   over = false
   while over === false
     turn(board)
