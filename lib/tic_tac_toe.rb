@@ -61,15 +61,8 @@ def play(board)
   loop do
     turn(board)
     if over?(board) === true
-      if won?(board) === true
-        winner = winner(board)
-        puts "Congratulations #{winner}!"
-        break
-      elsif draw?(board) === true
-        puts "Cat's Game!"
-        break
-      end
-      break
+      
+
     end
   end
 end
