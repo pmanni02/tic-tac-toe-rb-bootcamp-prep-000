@@ -66,6 +66,7 @@ def play(board)
       puts "Congratulations"
       break
     elsif draw?(board)
+      puts "Draw game!"
       #tell players it has been a draw
       break
     end
