@@ -63,7 +63,7 @@ def play(board)
     turn(board)
     #counter += 1
     if won?(board)
-      #congratulate winner
+      puts "Congratulations"
       break
     elsif draw?(board)
       #tell players it has been a draw
