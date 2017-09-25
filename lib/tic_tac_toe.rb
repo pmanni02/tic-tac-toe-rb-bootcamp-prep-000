@@ -56,7 +56,7 @@ end
 
 # Define your play method below
 def play(board)
-  counter = 0
+  #counter = 0
   loop do
     turn(board)
     #counter += 1
@@ -64,7 +64,7 @@ def play(board)
       #congratulate winner
     elsif draw?(board)
       #tell players it has been a draw
-      
+
     end
     if counter === 9
       break
