@@ -63,13 +63,13 @@ def play(board)
       turn(board)
     end
   end
-  over = false
-  while over === false
-    turn(board)
-    if over?(board) === true
-      over = true
-    end
-  end
+  # over = false
+  # while over === false
+  #   turn(board)
+  #   if over?(board) === true
+  #     over = true
+  #   end
+  # end
 end
 
 def over?(board)
