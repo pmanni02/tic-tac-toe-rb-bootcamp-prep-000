@@ -58,14 +58,14 @@ end
 
 # Define your play method below
 def play(board)
-  #counter = 0
+  counter = 0
   loop do
     turn(board)
     #counter += 1
-    if won?(board)
+    if won?(board) === true
       puts "Congratulations"
       break
-    elsif draw?(board)
+    elsif draw?(board) === true
       puts "Draw game!"
       #tell players it has been a draw
       break
