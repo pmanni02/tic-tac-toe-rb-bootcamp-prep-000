@@ -66,6 +66,14 @@ def play(board)
   end
 end
 
+def over?(board)
+  if won?(board) || draw?(board) || full?(board)
+    return true
+  else
+    return false
+  end
+end
+
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -115,13 +123,7 @@ def draw?(board)
   end
 end
 
-def over?(board)
-  if won?(board) || draw?(board) || full?(board)
-    return true
-  else
-    return false
-  end
-end
+
 
 def winner(board)
   if won?(board) === false
