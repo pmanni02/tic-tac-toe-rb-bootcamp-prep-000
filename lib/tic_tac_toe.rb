@@ -58,18 +58,14 @@ end
 def play(board)
   loop do
     if over?(board)
+      if won?(board)
+        
+      end
       break
     else
       turn(board)
     end
   end
-  # over = false
-  # while over === false
-  #   turn(board)
-  #   if over?(board) === true
-  #     over = true
-  #   end
-  # end
 end
 
 def over?(board)
