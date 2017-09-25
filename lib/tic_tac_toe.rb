@@ -59,7 +59,8 @@ def play(board)
   loop do
     if over?(board)
       if won?(board)
-        
+        winner = winner(board)
+        puts "Congratulations #{winner}!"
       end
       break
     else
