@@ -64,7 +64,8 @@ def play(board)
 
       if won?(board) != false
         puts "Congratulations!"
-      
+      else
+        puts "Cat's Game!"
       end
 
       break
