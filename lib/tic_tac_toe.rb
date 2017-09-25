@@ -68,7 +68,7 @@ def play(board)
         puts "Congratulations #{winner}!"
         break
       elsif draw?(board) === true
-        
+        puts "Cat's Game!"
         break
       end
       break
