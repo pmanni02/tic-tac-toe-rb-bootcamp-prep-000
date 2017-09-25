@@ -65,7 +65,6 @@ def play(board)
       over = true
     end
   end
-
 end
 
 def over?(board)
