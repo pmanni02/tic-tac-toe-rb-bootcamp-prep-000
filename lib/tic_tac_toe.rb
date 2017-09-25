@@ -62,12 +62,8 @@ def play(board)
   loop do
     turn(board)
     #counter += 1
-    if won?(board) === true
+    if over?(board) === true
       puts "Congratulations"
-      break
-    elsif draw?(board) === true
-      puts "Draw game!"
-      #tell players it has been a draw
       break
     end
   end
