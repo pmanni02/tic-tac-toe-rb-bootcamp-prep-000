@@ -38,7 +38,6 @@ def turn_count(board)
   i = 0
   count = 0
   while i<10
-    
     if board[i] != " "
       count += 1
     end
