@@ -62,11 +62,9 @@ def play(board)
     #counter += 1
     if won?(board)
       #congratulate winner
+      break
     elsif draw?(board)
       #tell players it has been a draw
-
-    end
-    if counter === 9
       break
     end
   end
