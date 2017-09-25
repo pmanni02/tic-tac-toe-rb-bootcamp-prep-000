@@ -59,7 +59,13 @@ def play(board)
   counter = 0
   loop do
     turn(board)
-    counter += 1
+    #counter += 1
+    if won?(board)
+      #congratulate winner
+    elsif draw?(board)
+      #tell players it has been a draw
+      
+    end
     if counter === 9
       break
     end
