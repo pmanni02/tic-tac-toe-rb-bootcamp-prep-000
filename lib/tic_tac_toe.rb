@@ -36,14 +36,14 @@ end
 
 def turn_count(board)
   i = 0
-  counter = 0
+  count = 0
   while i<10
     if board[i] != " "
-      counter += 1
+      count += 1
     end
     i+=1
   end
-  return 
+  return count
 end
 # Define your play method below
 def play(board)
@@ -121,4 +121,3 @@ def winner(board)
     return board[won?(board)[0]]
   end
 end
-
