@@ -63,8 +63,14 @@ def play(board)
     turn(board)
     #counter += 1
     if over?(board) === true
-      winner = winner(board)
-      puts "Congratulations #{winner}!"
+      if won?(board) === true
+        winner = winner(board)
+        puts "Congratulations #{winner}!"
+        break
+      elsif draw?(board) === true
+        
+        break
+      end
       break
     end
   end
