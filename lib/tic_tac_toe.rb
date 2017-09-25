@@ -62,10 +62,11 @@ def play(board)
     turn(board)
     if over?(board) === true
 
-      if won?(board)
-        
-      end
+      if won?(board) != false
+        puts "Congratulations!"
       
+      end
+
       break
     end
   end
