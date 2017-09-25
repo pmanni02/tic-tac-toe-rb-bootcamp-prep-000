@@ -58,10 +58,8 @@ end
 
 # Define your play method below
 def play(board)
-  counter = 0
   loop do
     turn(board)
-    #counter += 1
     if over?(board) === true
       if won?(board) === true
         winner = winner(board)
