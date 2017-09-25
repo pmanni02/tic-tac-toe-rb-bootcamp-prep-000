@@ -64,7 +64,7 @@ def play(board)
     #counter += 1
     if over?(board) === true
       winner = winner(board)
-      puts "Congratulations"
+      puts "Congratulations #{winner}!"
       break
     end
   end
